@@ -6,3 +6,4 @@ class GetBooksEvent extends BooksEvent{}
 
 class SearchBooksEvent extends BooksEvent{}
 
+class LoadMoreBooksEvent extends BooksEvent {}

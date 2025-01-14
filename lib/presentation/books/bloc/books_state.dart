@@ -13,5 +13,7 @@ class BookError extends BooksState{
 
 class BookLoadedState extends BooksState{
   final List<Book> books;
-  BookLoadedState(this.books);
+  final bool hasReachedMax;
+  BookLoadedState({required this.books, this.hasReachedMax=false});
+  
 }

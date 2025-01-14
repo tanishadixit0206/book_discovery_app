@@ -6,10 +6,9 @@ class ApiService {
   final Dio _dio =Dio();
   final String baseUrl=EnvConfig.BASE_URL;
 
-  Future<List<Book>> fetchBooks() async{
+  Future<List<Book>> fetchBooks({int page=1}) async{
     try{
-      final Response response = await _dio.get(baseUrl);
-      print("Response: ${response.data['results']}");
+      final Response response = await _dio.get('$baseUrl?page=$page');
       if(response.statusCode==200){
         return (response.data['results'] as List).map((json)=>Book.fromJson(json)).toList();
       }else{
