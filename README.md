@@ -96,7 +96,27 @@ The app follows a clean and modern design with:
 - **Clickable book items** to navigate to the detail screen
 - **Search bar** for quick access to specific books
 
----
+## App Screenshots
+
+<p align="center">
+  <img src="assets/BookListScreen.jpg" width="300" alt="Book List Screen"/>
+</p>
+
+<p align="center">
+  <img src="assets/BookDetailsScreen1.jpg" width="300" alt="Book Details Screen 1"/>
+</p>
+
+<p align="center">
+  <img src="assets/BookDetailsScreen2.jpg" width="300" alt="Book Details Screen 2"/>
+</p>
+
+<p align="center">
+  <img src="assets/Search.jpg" width="300" alt="Search"/>
+</p>
+
+<p align="center">
+  <img src="assets/Pagination.jpg" width="300" alt="Pagination"/>
+</p>
 
 ## 🔍 **State Management (Bloc Pattern)**
 The **Bloc pattern** is used to manage state in the app. The `BooksBloc` handles fetching book data, responding to user events, and updating the UI state accordingly.
